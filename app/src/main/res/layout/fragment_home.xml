@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/id_lable_txtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="ID:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/id_lable_txtv"
+            android:textSize="16sp"
+            tools:text="ID:" />
+
+        <TextView
+            android:id="@+id/name_txt_v_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_lable_txtv"
+            android:layout_centerVertical="true"
+            android:text="Name:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name_tx_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_lable_txtv"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/name_txt_v_label"
+            android:textSize="16sp"
+            tools:text="Name:" />
+
+        <TextView
+            android:id="@+id/emailtxt_v_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_txt_v_label"
+            android:layout_centerVertical="true"
+            android:text="Email:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email_txt_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_txt_v_label"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/emailtxt_v_label"
+            android:textSize="16sp"
+            tools:text="Name:" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_txt_v"
+            android:layout_marginTop="8dp"
+            android:text="Logout"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</FrameLayout>
